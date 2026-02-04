@@ -325,6 +325,12 @@
             left: -1px;
             top: -10px;
         }
+        
+        /* Build mode crosshair */
+        .crosshair.build-mode .crosshair-line {
+            background: rgba(76, 175, 80, 0.9);
+            box-shadow: 0 0 10px rgba(76, 175, 80, 0.8);
+        }
 
         .hud-bottom {
             position: absolute;
@@ -633,6 +639,12 @@
                     <input type="text" id="playerNameInput" placeholder="Enter your name" maxlength="15" value="Player">
                 </div>
                 
+                <div class="button-group">
+                    <button id="playBtn" class="btn btn-primary" style="font-size: 20px; padding: 20px; width: 100%;">🎮 PLAY</button>
+                </div>
+                
+                <div class="divider">ADVANCED OPTIONS</div>
+                
                 <div class="input-group">
                     <label>Lobby Type:</label>
                     <div style="display: flex; gap: 10px; margin-top: 5px;">
@@ -648,8 +660,8 @@
                 </div>
                 
                 <div class="button-group">
-                    <button id="createLobbyBtn" class="btn btn-primary">Host Game</button>
-                    <button id="browseGamesBtn" class="btn btn-secondary">Browse Public Games</button>
+                    <button id="createLobbyBtn" class="btn btn-secondary">Host Custom Game</button>
+                    <button id="browseGamesBtn" class="btn btn-secondary">Browse Games</button>
                 </div>
                 
                 <div class="divider">OR</div>
@@ -705,6 +717,14 @@
                     <button id="startGameBtn" class="btn btn-primary" disabled>Start Game (Need 2+ Players)</button>
                     <button id="leaveLobbyBtn" class="btn btn-danger">Leave Game</button>
                 </div>
+                
+                <div style="margin-top: 15px;">
+                    <label style="color: #666; font-weight: 600; margin-bottom: 5px; display: block;">Add Bots:</label>
+                    <div class="button-group">
+                        <button id="addBotBtn" class="btn btn-secondary">+ Add Bot</button>
+                        <button id="removeBotBtn" class="btn btn-danger">- Remove Bot</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -724,6 +744,10 @@
                 <div class="player-count">
                     <div id="playerCount">Players: 0</div>
                 </div>
+                
+                <div style="background: rgba(0, 0, 0, 0.7); padding: 15px 25px; border-radius: 10px; color: white; font-weight: bold; font-size: 18px;">
+                    <div style="margin-bottom: 5px;">🪓 Wood: <span id="materialsCount">500</span></div>
+                </div>
             </div>
             
             <div class="crosshair">
@@ -733,7 +757,10 @@
             
             <div class="hud-bottom">
                 <div class="controls-info">
-                    WASD: Move | Mouse: Look | Left Click: Shoot | R: Reload | 1-3: Switch Weapon | ESC: Menu
+                    WASD: Move | SPACE: Jump | G: Build Mode | Q/E/F: Wall/Floor/Ramp | R: Rotate | Click: Place/Shoot | ESC: Menu
+                </div>
+                <div id="buildModeIndicator" style="background: rgba(76, 175, 80, 0.9); padding: 15px 30px; border-radius: 10px; color: white; font-weight: bold; font-size: 18px; margin-top: 10px; display: none;">
+                    Building: WALL (10 wood) | Rotation: 0°
                 </div>
             </div>
             

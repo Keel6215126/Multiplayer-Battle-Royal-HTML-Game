@@ -8,7 +8,7 @@ let isHost = false;
 let isPublicLobby = false;
 let gameInProgress = false;
 
-// Matchmaking API URL - UPDATE THIS after deploying to Vercel!
+// Matchmaking API URL - Vercel deployment
 const MATCHMAKING_API = 'https://idk-umber-sigma.vercel.app/api/lobbies';
 
 // Three.js variables

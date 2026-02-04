@@ -1,0 +1,128 @@
+🎉 NEW FEATURES ADDED! 🎉
+═══════════════════════════════════════════════════════════════════
+
+✨ PUBLIC & PRIVATE LOBBIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Now you can create TWO types of games:
+
+🌐 PUBLIC LOBBIES
+  • Visible to everyone
+  • Players can browse and join instantly
+  • No Game ID needed to join
+  • Perfect for finding random players
+
+🔒 PRIVATE LOBBIES
+  • Only visible to people with Game ID
+  • Share Game ID with specific friends
+  • More control over who joins
+  • Works 100% without any server!
+
+
+🔍 BROWSE PUBLIC GAMES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+New "Browse Public Games" button!
+
+  • See all available public games
+  • Shows host name and player count
+  • Click any game to join instantly
+  • Auto-refreshes to stay up-to-date
+
+
+📁 NEW FILES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📂 vercel-server/
+  ├── api/lobbies.js      → Matchmaking API
+  ├── package.json        → Server dependencies
+  └── vercel.json         → Vercel configuration
+
+📄 VERCEL_DEPLOY.md       → Guide to deploy matchmaking server
+📄 WHATS_NEW.txt          → This file!
+
+
+🚀 HOW TO USE NEW FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OPTION 1: Use Without Server (Private Games Only)
+  1. Just open index.html as before
+  2. Create PRIVATE games
+  3. Share Game IDs with friends
+  4. No setup needed!
+
+OPTION 2: Deploy Matchmaking (Public + Private Games)
+  1. Follow instructions in VERCEL_DEPLOY.md
+  2. Deploy to Vercel (free, 5 minutes)
+  3. Update MATCHMAKING_API in game.js
+  4. Now public games work too!
+
+
+💡 IMPORTANT NOTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Private games ALWAYS work (no server needed)
+✓ Public games require matchmaking server on Vercel
+✓ The game itself is still 100% HTML - no installation
+✓ All multiplayer is still peer-to-peer (P2P)
+✓ Matchmaking server just lists available games
+
+
+🎮 HOW IT WORKS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PRIVATE GAMES:
+  Player 1                    Player 2
+     |                            |
+     |------ Game ID ------------>|
+     |                            |
+     |<----- P2P Connection ----->|
+     
+  No server needed!
+
+
+PUBLIC GAMES:
+  Player 1              Matchmaking Server         Player 2
+     |                         |                       |
+     |-Register game---------->|                       |
+     |                         |<----Browse games------|
+     |                         |                       |
+     |<---------- P2P Connection -------------------- >|
+     
+  Server only lists games, not involved in gameplay!
+
+
+📋 QUICK COMPARISON
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+                    PUBLIC GAMES    PRIVATE GAMES
+                    ════════════    ═════════════
+Server Required?         YES             NO
+Anyone Can Join?         YES             NO
+Need Game ID?            NO              YES
+Setup Time?          5 minutes        0 seconds
+Best For?         Finding players   Playing with
+                                      friends
+
+
+🎯 RECOMMENDATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+JUST PLAYING WITH FRIENDS?
+  → Use private lobbies, no setup needed!
+
+WANT RANDOM PLAYERS?
+  → Deploy matchmaking server, use public lobbies!
+
+SCHOOL CHROMEBOOK?
+  → Private lobbies work great, no special setup!
+
+HOSTING PUBLIC COMMUNITY?
+  → Deploy to Vercel once, everyone can browse games!
+
+
+═══════════════════════════════════════════════════════════════════
+
+All features work on Chromebooks - no installation required! 🎮
+
+═══════════════════════════════════════════════════════════════════

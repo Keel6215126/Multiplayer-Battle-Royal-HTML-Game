@@ -1,0 +1,74 @@
+╔══════════════════════════════════════════════════════════════════╗
+║          BATTLE ROYALE 3D - QUICK START GUIDE                    ║
+║                  Chromebook Edition                              ║
+╚══════════════════════════════════════════════════════════════════╝
+
+📂 STEP 1: OPEN THE GAME
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Double-click on "index.html" to open in Chrome
+
+(Or right-click → Open with → Google Chrome)
+
+
+🎮 STEP 2: HOST OR JOIN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TO HOST A GAME:
+  1. Enter your name
+  2. Click "Host Game"
+  3. Copy the Game ID that appears
+  4. Share it with your friends (text, email, etc.)
+  5. Wait for friends to join
+  6. Click "Start Game" when ready
+
+TO JOIN A GAME:
+  1. Get the Game ID from your friend
+  2. Enter your name
+  3. Paste the Game ID in the box
+  4. Click "Join Game"
+  5. Wait for host to start
+
+
+🕹️  CONTROLS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+W A S D       →  Move around
+Mouse         →  Look around (click screen first!)
+Left Click    →  Shoot
+ESC           →  Exit mouse lock
+
+
+💡 TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Works on ANY Chromebook - no installation needed!
+✓ Game ID is unique each session - share it every time
+✓ Works over internet - your friend can be anywhere!
+✓ Keep moving to avoid being shot
+✓ Use buildings as cover
+✓ Watch your health bar (top-left)
+✓ You respawn after 3 seconds if eliminated
+
+
+⚠️  TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Problem: Can't connect
+Solution: Refresh page and try again with new Game ID
+
+Problem: Mouse won't work
+Solution: Click anywhere on the game screen first
+
+Problem: Friend can't join
+Solution: Make sure they have the EXACT Game ID (case-sensitive)
+
+
+📱 SHARING THE GAME
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Just send your friends these 2 files:
+  • index.html
+  • game.js
+
+They can open index.html and play immediately!
+
+
+═══════════════════════════════════════════════════════════════════
+               HAVE FUN! 🎮 Good luck in the arena!
+═══════════════════════════════════════════════════════════════════
